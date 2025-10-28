@@ -1,43 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-info">
+        <img src="Fotos_Oficiales.png" alt="Débora Martínez" class="foto-perfil" />
+        <div>
+          <h1>Débora Martínez</h1>
+          <p>Lic. en Mercadeo Internacional</p>
+          <a href="Curriculum 25.pdf" class="btn">Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <section class="sobre-mí">
+        <h2>Sobre Mi</h2>
+        <p>Soy una joven creativa, determinada y con un alto nivel
+        de compromiso tanto personal como profesional. Se distingue por su comunicación
+        efectiva, pensamiento estratégico y una pasión por el diseño de soluciones con impacto.
+        Con un alto entusiasmo por el trabajo en equipo y la capacidad de transformar desafíos en oportunidades.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="galeria">
+            <div class="card">
+                <h3><a href="https://www.figma.com/design/GjvyU9MWQTnpM9tuLuLrBR/Trip-Scout?node-id=0-1&t=8oV6DZb3BvyrGCyY-1" target="_blank">Hackaton 2023</a></h3>
+                <p>Creación de un prototipo en Figma sobre una aplicación que busca fomentar y dar a conocer un poco más sobre el turismo salvadoreño</p>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://github.com/OscarAlegria12/NewInnVate.git" target="_blank">Expo 2024</a></h3>
+                <p> Un sitio web enfocado en conectar a personas innovadoras sin experiencia laboral, pero con altas expectativas de trabajo y los inversores.</p>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://github.com/ArianaSaenz/FrontEnd-Yumfull.git" target="_blank">Expotech 2025</a></h3>
+                <p>Prototipo web dedicado a crear un servicion de alimentación saludable y personalizada en base a dietas de cada usuario.</p>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://github.com/usuario/repositorio4" target="_blank">Tienda Web</a></h3>
+                <p>Un sitio web como modelo de tienda de ropa deportiva en línea.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Débora Martínez. Todos los derechos reservados.</p>
+        <p>Contacto: merabmartinez16@gmail.com.</p>
+        <p>Teléfono: +503 7826 9875</p>
+    </footer>
+</body>
+
 </html>
